@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pizzaking.PizzaOrderFXMLController">
+    <children>
+        <Label layoutX="229.0" layoutY="14.0" prefHeight="38.0" prefWidth="169.0" text="Pizza Order">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="88.0" text="Select Pizza Size:" />
+        <RadioButton fx:id="smallRB" layoutX="20.0" layoutY="122.0" mnemonicParsing="false" text="Small - $6" />
+        <RadioButton fx:id="mediumRB" layoutX="19.0" layoutY="161.0" mnemonicParsing="false" text="Medium - $8" />
+        <RadioButton fx:id="largeRB" layoutX="18.0" layoutY="200.0" mnemonicParsing="false" text="Large - $12" />
+        <TextArea fx:id="resArea" editable="false" layoutX="189.0" layoutY="95.0" prefHeight="138.0" prefWidth="237.0" />
+        <Label layoutX="433.0" layoutY="88.0" text="Select Any Toppings:" />
+        <CheckBox fx:id="MushroomsCB" layoutX="436.0" layoutY="122.0" mnemonicParsing="false" text="Mushrooms- $2" />
+        <CheckBox fx:id="cheeseCB" layoutX="438.0" layoutY="161.0" mnemonicParsing="false" text="Cheese - $2" />
+        <CheckBox fx:id="VegetablesCB" layoutX="438.0" layoutY="200.0" mnemonicParsing="false" text="Vegetables- $2" />
+        <Label layoutX="21.0" layoutY="284.0" prefHeight="17.0" prefWidth="121.0" text=" Price Pre-Tax:" />
+        <TextField fx:id="totalPriceField" editable="false" layoutX="132.0" layoutY="280.0" prefHeight="25.0" prefWidth="62.0" />
+        <Label layoutX="223.0" layoutY="284.0" prefHeight="17.0" prefWidth="111.0" text="Number of Drinks:" />
+        <TextField fx:id="NDrinkField" layoutX="338.0" layoutY="280.0" prefHeight="25.0" prefWidth="74.0" />
+        <Button fx:id="submitButton" layoutX="470.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Submit" />
+        <Label layoutX="223.0" layoutY="316.0" text="Final Bill:" />
+        <TextField fx:id="finalBillField" editable="false" layoutX="223.0" layoutY="342.0" prefHeight="25.0" prefWidth="169.0" />
+      <Spinner fx:id="sp1" layoutX="132.0" layoutY="118.0" prefHeight="25.0" prefWidth="47.0" />
+      <Spinner fx:id="sp2" layoutX="132.0" layoutY="157.0" prefHeight="25.0" prefWidth="47.0" />
+      <Spinner fx:id="sp3" layoutX="132.0" layoutY="196.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="23.0" layoutY="316.0" prefHeight="17.0" prefWidth="106.0" text="Order Number:" />
+      <Spinner fx:id="sp4" layoutX="132.0" layoutY="312.0" prefHeight="25.0" prefWidth="62.0" />
+      <Label fx:id="time" layoutX="508.0" layoutY="25.0" prefHeight="17.0" prefWidth="82.0" text="Clock" />
+      <Button fx:id="printButton" layoutX="470.0" layoutY="355.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Print Receipt" />
+    </children>
+</AnchorPane>

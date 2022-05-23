@@ -1,0 +1,8 @@
+You selected:
+5 Large-sized Pizza 
+Toppings chosen: 3
+Mushrooms - $2
+Cheese - $2
+Vegetables - $2
+Remaining Customers: 1
+Order Created at: Mon May 23 13:47:49 EEST 2022
